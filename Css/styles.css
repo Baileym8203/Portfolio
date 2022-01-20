@@ -1,0 +1,42 @@
+body{
+font-family: "Outfit", "serif-sans";
+}
+
+#move{
+margin-right: 50px;
+margin-top: 8px;
+}
+
+.text{
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+
+.span1{
+background-color: black;
+border-radius: 10.5px;
+color: whitesmoke;
+}
+
+.span2{
+background-color: black;
+color: whitesmoke;
+border-radius: 6px;
+}
+
+#top{
+margin-top: 15px;
+}
+
+#center{
+text-align: center;
+}
+
+#github{
+width: 50px;
+}
+
+#linkedin{
+width: 50px;
+}
