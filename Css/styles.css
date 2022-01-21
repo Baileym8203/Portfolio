@@ -56,7 +56,7 @@ svg {
   stroke-dasharray: 6% 29%;
   stroke-width: 5px;
   stroke-dashoffset: 0%;
-  animation: stroke-offset 5.5s infinite linear;
+  animation: stroke-offset 8.5s infinite linear;
 }
 
 .text-copy:nth-child(1) {
@@ -66,27 +66,28 @@ svg {
 
 .text-copy:nth-child(2) {
   stroke: grey;
-  animation-delay: -2s;
+  animation-delay: -3s;
 }
 
 .text-copy:nth-child(3) {
   stroke: grey;
-  animation-delay: -3s;
+  animation-delay: -4.5s;
 }
 
 .text-copy:nth-child(4) {
   stroke: grey;
-  animation-delay: -4s;
+  animation-delay: -5s;
 }
 
 .text-copy:nth-child(5) {
   stroke: black;
-  animation-delay: -5s;
+  animation-delay: 8s;
 }
 
 #full-stack {
   width: 1000px;
   margin-top: -15px;
+  filter: drop-shadow(15px 10px 5px rgba(114, 112, 112, 0.658));
 }
 
 @keyframes stroke-offset {
@@ -138,19 +139,19 @@ p {
 }
 
 .wisteria {
-  color: rgb(243, 93, 118);
+  color: rgb(204, 85, 105);
 }
 
 .belize {
-  color: #2980b9;
+  color: #2e8ece;
 }
 
 .pomegranate {
-  color: rgb(221, 221, 19);
+  color: rgb(216, 216, 22);
 }
 
 .green {
-  color: red;
+  color: rgb(189, 0, 0);
 }
 
 .midnight {
@@ -241,7 +242,7 @@ p {
 }
 
 #flip div:first-child {
-  animation: show 5s linear infinite;
+  animation: show 9.5s linear infinite;
 }
 
 #flip div div {
@@ -282,4 +283,29 @@ p {
   100% {
     margin-top: -270px;
   }
+}
+/* shadowing effects*/
+.shadows {
+  position: relative;
+  text-transform: uppercase;
+  text-shadow: -15px 5px 20px black;
+  color: black;
+  letter-spacing: -0.05em;
+  font-family: "Outfit", Arial, sans-serif;
+  user-select: none;
+  text-transform: uppercase;
+  font-size: 150px;
+  transition: all 0.25s ease-out;
+}
+.shadows:hover {
+  text-shadow: -16px 6px 15px black;
+}
+
+.card {
+  filter: drop-shadow(0px 10px 5px rgba(59, 59, 59, 0.712));
+}
+
+#button1,
+#button2 {
+  filter: drop-shadow(0px 10px 5px rgba(34, 34, 34, 0.801));
 }
