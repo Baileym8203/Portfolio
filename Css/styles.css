@@ -1,42 +1,291 @@
-body{
-font-family: "Outfit", "serif-sans";
+/* start of all CSS */
+body {
+  font-family: "Outfit", "serif-sans";
 }
 
-#move{
-margin-right: 50px;
-margin-top: 8px;
+#move {
+  margin-right: 50px;
+  margin-top: 8px;
 }
 
-.text{
-text-align: center;
-align-items: center;
-justify-content: center;
+.text {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
-.span1{
-background-color: black;
-border-radius: 10.5px;
-color: whitesmoke;
+.span1 {
+  background-color: black;
+  border-radius: 10.5px;
+  color: whitesmoke;
 }
 
-.span2{
-background-color: black;
-color: whitesmoke;
-border-radius: 6px;
+.span2 {
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 6px;
 }
 
-#top{
-margin-top: 15px;
+#top {
+  margin-top: 15px;
 }
 
-#center{
-text-align: center;
+#center {
+  text-align: center;
 }
 
-#github{
-width: 50px;
+#github {
+  width: 50px;
 }
 
-#linkedin{
-width: 50px;
+#linkedin {
+  width: 50px;
+}
+/*the <welcome> CSS effect */
+svg {
+  display: block;
+  font: 10.5em "Outfit";
+  width: 960px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.text-copy {
+  fill: none;
+  stroke: yellow;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+  stroke: black;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+  stroke: grey;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+  stroke: grey;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+  stroke: grey;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+  stroke: black;
+  animation-delay: -5s;
+}
+
+#full-stack {
+  width: 1000px;
+  margin-top: -15px;
+}
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
+}
+/*The full stack coder text effect!*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+.rotate {
+  position: relative;
+  text-align: center;
+}
+
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.word {
+  position: relative;
+  width: 20px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+  text-decoration-line: overline;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: rgb(243, 93, 118);
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: rgb(221, 221, 19);
+}
+
+.green {
+  color: red;
+}
+
+.midnight {
+  color: black;
+}
+/* The <black glow> CSS effect*/
+:root {
+  --shadow-color: black;
+  --shadow-color-light: white;
+}
+
+p {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Archivo Black", "Archivo", sans-serif;
+  font-weight: normal;
+  display: block;
+  height: auto;
+  text-align: center;
+}
+
+.logo-1 {
+  color: black;
+  animation: neon 3s infinite;
+}
+
+@keyframes neon {
+  0% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light),
+      -1px 1px 1px var(--shadow-color-light),
+      1px -1px 1px var(--shadow-color-light),
+      1px 1px 1px var(--shadow-color-light), 0 0 3px var(--shadow-color-light),
+      0 0 0px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+      0 0 0px var(--shadow-color), 0 0 40px var(--shadow-color),
+      0 0 0px var(--shadow-color), 0 0 70px var(--shadow-color),
+      0 0 0px var(--shadow-color), 0 0 200px var(--shadow-color);
+  }
+  50% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light),
+      -1px 1px 1px var(--shadow-color-light),
+      1px -1px 1px var(--shadow-color-light),
+      1px 1px 1px var(--shadow-color-light), 0 0 5px var(--shadow-color-light),
+      0 0 15px var(--shadow-color-light), 0 0 25px var(--shadow-color-light),
+      0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color),
+      0 0 60px var(--shadow-color), 0 0 80px var(--shadow-color),
+      0 0 110px var(--shadow-color), 0 0 210px var(--shadow-color);
+  }
+  100% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light),
+      -1px 1px 1px var(--shadow-color-light),
+      1px -1px 1px var(--shadow-color-light),
+      1px 1px 1px var(--shadow-color-light), 0 0 3px var(--shadow-color-light),
+      0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+      0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color),
+      0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color),
+      0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+  }
+}
+
+/* The move css effect */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:700");
+
+#container {
+  color: #999;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+  padding-top: 200px;
+  position: relative;
+  width: 100%;
+  bottom: 45%;
+  display: block;
+  margin-top: -185px;
+}
+
+#flip {
+  height: 50px;
+  overflow: hidden;
+}
+
+#flip > div > div {
+  color: #fff;
+  padding: 4px 12px;
+  height: 45px;
+  margin-bottom: 45px;
+  display: inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background: grey;
+}
+#flip div:first-child div {
+  background: black;
+}
+#flip div:last-child div {
+  background: black;
+}
+
+@keyframes show {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+
+p {
+  position: fixed;
+  width: 100%;
+  bottom: 30px;
+  font-size: 12px;
+  color: #999;
+  margin-top: 200px;
 }

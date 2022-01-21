@@ -14,12 +14,36 @@ crossorigin="anonymous">
        
       </nav>
     <div class="container"> <!-- start of body for the home page! -->
-        
+     
     <div class="row">
     <div class="col-md-12">
-    <h2 class="text">Hello Welcome to all things code</h2>
-    <h3 class="text">I am a full-stack <span class="span1">web</span> developer!</h3>
-    <h4 class="text">Take a look at my best work!!</h4>
+      <svg class="img-fluid" id="full-stack" viewBox="0 0 960 300">
+      <symbol id="s-text">
+        <text text-anchor="middle" x="50%" y="80%">Welcome</text>
+      </symbol>
+    
+      <g class = "g-ants">
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+      </g>
+    </svg>
+    <div class="rotate">
+      <h1>I'm A Full Stack Coder</h1>
+      <h1>
+        <span class="word wisteria">SCCS</span>
+        <span class="word belize">SQL</span>
+        <span class="word pomegranate">MongoDB</span>
+        <span class="word green">React</span>
+        <span class="word midnight">Bootstrap</span>
+        <span class="word pomegranate">jQuery</span>
+        <span class="word pomegranate">Angular</span>
+        <span class="word green">Express</span>
+        <span class="word pomegranate">Nodejs</span>
+      </h1>
+    </div> 
     </div>
     </div>
     <div class="row" id="center">
@@ -33,12 +57,25 @@ crossorigin="anonymous">
           <h3>All Me</h3>
             <h5>I love everything tech, and code! I've been coding since I was 
                 15 years old, and it has never been a more fun experience today! I play hard, but work 
-                <span class="span2">harder!</span> I'm always looking for more, 
-                and more to learn in the industry! I always strive to do <span class="span2">Better</span>
+                <div id=container> 
+                  <div id=flip>
+                    <div><div>Harder</div></div>
+                    <div><div>Better</div></div>
+                    <div><div>Faster</div></div>
+                  </div>
+                </div>
+                I'm always looking for more, 
+                and more to learn in the industry! I always strive to do <p class="logo-1">
+                  Better
+                </p>
                 then before no matter the issues faced! As I learn I become more observant of the issues faced
-                before, and learn from them to become much <span class="span2">Faster</span> at coding through
+                before, and learn from them to become much <p class="logo-1">
+                  Faster
+                </p> at coding through
                 syntax issues! After any issues are faced in my life whether or not it's through code or life in general.
-                I always come back as a <span class="span2">Stronger</span> person, and worker. I'm a team player
+                I always come back as a <p class="logo-1">
+                  Stronger
+                </p> person, and worker. I'm a team player
                 always motivated to learn more, and get the task at hand accomplished!<br><br> Ps my favorite song to work to
                 is Daft Punk "Harder, better, faster, stronger" as outlined by the text because it's what I live by!  </h5>
           <br>
@@ -87,7 +124,7 @@ crossorigin="anonymous">
           </h5>
           </div>
           </div>
-          <br>
+          <br> <br>
           <button class="btn btn-dark" id="center" type="button" data-toggle="collapse" data-target="#contact" aria-expanded="false" aria-controls="collapseExample">
             contact
           </button>
