@@ -224,7 +224,7 @@ p {
   width: 100%;
   bottom: 45%;
   display: block;
-  margin-top: -185px;
+  margin-top: -125px;
 }
 
 #flip {
@@ -246,12 +246,15 @@ p {
 
 #flip div div {
   background: grey;
+  border-radius: 7px;
 }
 #flip div:first-child div {
   background: black;
+  border-radius: 7px;
 }
 #flip div:last-child div {
   background: black;
+  border-radius: 7px;
 }
 
 @keyframes show {
