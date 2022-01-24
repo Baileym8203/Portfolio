@@ -69,3 +69,52 @@ spans.forEach((span, idx) => {
 		span.classList.add('active');
 	}, 750 * (idx+1))
 });
+
+// the blur event listeners!
+document.getElementById('button1').addEventListener('click', function () {
+ document.getElementById('1')
+  .classList.toggle('blur');
+  document.getElementById('2')
+  .classList.toggle('blur');
+  document.getElementById('3')
+  .classList.toggle('blur');
+});
+
+document.getElementById('button2').addEventListener('click', function () {
+   document.getElementById('button1')
+   .classList.add('blur');
+   document.getElementById('1')
+   .classList.toggle('blur');
+   document.getElementById('3')
+   .classList.toggle('blur');
+ });
+
+ // adding in escape functions to both about and contact! will close the small mini pages with "Escape" key
+
+ document.getElementById('button1').addEventListener('keydown', function(e) {
+  if(e.key === "Escape") {
+ document.getElementById('button3')
+ .click(); //this will click the button virtually in the DOM
+ document.getElementById('1')
+  .classList.toggle('blur');
+  document.getElementById('2')
+  .classList.toggle('blur');
+  document.getElementById('3')
+  .classList.toggle('blur');
+ }
+ });
+
+ document.getElementById('button2').addEventListener('keydown', function(e) {
+  if(e.key === "Escape") {
+    document.getElementById('button4')
+    .click(); //this will click the button virtually in the DOM
+    document.getElementById('button1')
+     .classList.toggle('blur');
+     document.getElementById('1')
+     .classList.toggle('blur');
+     document.getElementById('3')
+     .classList.toggle('blur');
+  }
+ });
+
+ 
